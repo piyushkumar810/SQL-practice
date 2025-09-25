@@ -23,3 +23,17 @@ SELECT * FROM customer
 
 SELECT name FROM customer WHERE
 referee_id !=2 OR referee_id is NULL;
+
+
+-- note
+-- in place of referee_id is NULL i wrote:-
+-- referee_id = NULL
+
+-- In SQL, NULL is special — it means “unknown / no value”.
+-- So you cannot compare it with = or !=.
+
+-- examples:-
+-- SELECT 1 = NULL;      -- returns NULL (not true)
+-- SELECT 1 != NULL;     -- returns NULL (not true)
+-- SELECT NULL = NULL;   -- returns NULL (not true)
+-- SELECT NULL IS NULL;  -- returns TRUE
