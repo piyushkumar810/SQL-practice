@@ -14,8 +14,6 @@ INSERT INTO customer(name,referee_id) VALUES
 
 SELECT * FROM customer
 
-
-
 -- Find the names of the customer that are either:
 --           referred by any customer with id != 2.
 --           not referred by any customer.
@@ -23,7 +21,6 @@ SELECT * FROM customer
 
 SELECT name FROM customer WHERE
 referee_id !=2 OR referee_id is NULL;
-
 
 -- note
 -- in place of referee_id is NULL i wrote:-
@@ -33,7 +30,7 @@ referee_id !=2 OR referee_id is NULL;
 -- So you cannot compare it with = or !=.
 
 -- examples:-
--- SELECT 1 = NULL;      -- returns NULL (not true)
--- SELECT 1 != NULL;     -- returns NULL (not true)
+-- SELECT 1 = NULL;      -- returns NULL (not true , because = doesn’t work with NULL.)
+-- SELECT 1 != NULL;     -- returns NULL (not true, because != doesn’t work with NULL.)
 -- SELECT NULL = NULL;   -- returns NULL (not true)
 -- SELECT NULL IS NULL;  -- returns TRUE
