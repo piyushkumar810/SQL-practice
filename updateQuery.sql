@@ -45,3 +45,15 @@ where user_name='piyush kumar';
 update users1
 set age=age+1
 where email like '%@gmail.com';
+
+
+-- note :- 
+-- (5,'megha', 'meghapatil05@gmail.com', 25, 'pune');
+-- can we use double quote to insert string value like (5, "megha", ...)
+
+-- ans --> no
+-- ⚡ Summary
+-- Context	                    Single Quotes ' '	     Double Quotes " "
+-- Python	                      ✅ Works                 	✅ Works
+-- SQL (string values)         	✅ Required	              ⚠️ Not recommended
+-- SQL (identifiers)	          ⚠️ Avoid	                 ✅ Sometimes used
