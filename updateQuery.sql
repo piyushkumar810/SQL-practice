@@ -52,7 +52,6 @@ where email like '%@gmail.com';
 -- can we use double quote to insert string value like (5, "megha", ...)
 
 -- ans --> no
--- ⚡ Summary
 -- Context	                    Single Quotes ' '	     Double Quotes " "
 -- Python	                      ✅ Works                 	✅ Works
 -- SQL (string values)         	✅ Required	              ⚠️ Not recommended
