@@ -67,3 +67,18 @@ on e.department_id=d.department_id;
 
 -- not supportd in sql
 
+
+-- perfrming cross join
+select d.department_id,e.first_name,e.last_name,d.department_name
+from employees3 e
+cross JOIN department3 d;
+
+
+-- self_join
+select e1.first_name as employee_name1,
+       e2.first_name as employee_name2,
+       d.department_name
+from employees3 e1 join employees3 e2
+on e1.department_id=e2.department_id AND e1.employee_id <> e2.employee_id
+join department3 d
+on e1.department_id=d.department_id;
