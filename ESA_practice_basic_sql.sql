@@ -147,3 +147,25 @@ where phone is NULL;
 -- 10) Display distinct maintenance months.
 SELECT DISTINCT month
 FROM MAINTENANCE;
+
+
+-- ---------------------------------------------------------------------
+
+-- 🔹 PART 2: AGGREGATES + GROUP BY + HAVING (EXAM FAVORITE)
+-- 🎯 Goal: Think in totals, counts, max, min
+-- 💡 Difficulty: Medium
+
+-- Practice Questions
+
+-- Find total maintenance collected per month.
+-- Find average maintenance amount per block.
+-- Count number of flats in each block.
+-- Display blocks having more than 5 flats.
+-- Find the month with the highest total maintenance.
+-- Find flats that received more than one maintenance bill.
+-- Display blocks where average flat size > 1000 sqft.
+-- Count number of payments made using each payment mode.
+-- Find the minimum maintenance amount issued per block.
+-- Display months where total maintenance collected is less than 20,000.
+
+-- ⚠️ HAVING vs WHERE mistakes are checked heavily in PES exams
