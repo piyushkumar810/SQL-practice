@@ -157,10 +157,28 @@ FROM MAINTENANCE;
 
 -- Practice Questions
 
--- Find total maintenance collected per month.
--- Find average maintenance amount per block.
--- Count number of flats in each block.
--- Display blocks having more than 5 flats.
+-- Q1) Find total maintenance collected per month.
+SELECT month, SUM(amount) AS total_maintenance
+FROM MAINTENANCE
+GROUP BY month;
+
+-- Q2) Find average maintenance amount per block.
+select * from MAINTENANCE;
+
+select f.block, AVG(m.amount) as avg_maintanenceAmount
+from MAINTENANCE m join FLAT f
+on m.flat_no = m.flat_no
+GROUP BY f.block;
+
+
+-- Q3) Count number of flats in each block.
+select block, COUNT(flat_no) as no_of_flat
+from FLAT
+group by block;
+
+-- Q4) Display blocks having more than 5 flats.
+
+
 -- Find the month with the highest total maintenance.
 -- Find flats that received more than one maintenance bill.
 -- Display blocks where average flat size > 1000 sqft.
