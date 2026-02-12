@@ -177,8 +177,6 @@ from FLAT
 group by block;
 
 -- Q4) Display blocks having more than 5 flats.
-
-
 -- Find the month with the highest total maintenance.
 -- Find flats that received more than one maintenance bill.
 -- Display blocks where average flat size > 1000 sqft.
